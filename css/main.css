@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background: black;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 5px; }
+
+[class*='-face'] {
+  flex-basis: 150px;
+  height: 100%;
+  background: #FCFCFC;
+  border: 8px solid #D7D7D7;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.first-face span.pip {
+  padding: 15px 23px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background: black; }
+
+/*# sourceMappingURL=main.css.map */

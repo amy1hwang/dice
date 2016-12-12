@@ -7,26 +7,53 @@ html {
 body {
   background: black;
   display: flex;
-  height: 150px;
+  height: 160px;
   justify-content: space-between;
   align-items: stretch;
   padding: 5px; }
 
 [class*='-face'] {
-  flex-basis: 150px;
-  height: 100%;
+  width: 160px;
+  height: 160px;
   background: #FCFCFC;
   border: 8px solid #D7D7D7;
   border-radius: 10px;
   display: flex;
+  flex-wrap: wrap; }
+
+.column {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.pip {
+  margin: 5px;
+  padding: 10px 17px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  background: black; }
+
+.first-face {
   justify-content: center;
   align-items: center; }
 
-.first-face span.pip {
-  padding: 15px 23px;
-  width: 45px;
-  height: 45px;
-  border-radius: 100px;
-  background: black; }
+.second-face, .third-face {
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+  .second-face .pip:nth-of-type(2), .third-face .pip:nth-of-type(2) {
+    align-self: center; }
+  .second-face .pip:last-of-type, .third-face .pip:last-of-type {
+    align-self: flex-end; }
+
+.fourth-face {
+  align-content: space-between; }
+
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center; }
+
+.sixth-face {
+  align-content: space-between;
+  transform: rotate(90deg); }
 
 /*# sourceMappingURL=main.css.map */

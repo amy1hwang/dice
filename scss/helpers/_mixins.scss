@@ -1,0 +1,18 @@
+@mixin pip {
+  .pip {
+    margin: 5px;
+    padding: 10px 17px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background: black;
+  }
+}
+
+@mixin column {
+  .column {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

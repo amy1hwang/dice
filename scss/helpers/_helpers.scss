@@ -1,0 +1,9 @@
+%extend pip {
+  .pip {
+    padding: 15px 23px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background: black;
+  }
+}
